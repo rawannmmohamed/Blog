@@ -1,7 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { BlogListComponent } from '../blog-list/blog-list.component';
+
 import { Post } from '../../core/models/post';
 import { CommonModule } from '@angular/common';
+import { BlogListComponent } from '../../pages/blog-list/blog-list.component';
 
 @Component({
   selector: 'app-post-item',

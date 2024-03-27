@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, output } from '@angular/core';
 import { Post } from '../../core/models/post';
 import { PostService } from '../../core/services/post.service';
-import { PostItemComponent } from '../post-item/post-item.component';
+import { PostItemComponent } from '../../components/post-item/post-item.component';
 
 @Component({
   selector: 'app-blog-list',
@@ -11,7 +11,7 @@ import { PostItemComponent } from '../post-item/post-item.component';
   styleUrl: './blog-list.component.css',
 })
 export class BlogListComponent implements OnInit {
-  posts: Post[] = []; 
+  posts: Post[] = [];
 
   constructor(private postService: PostService) {}
 
