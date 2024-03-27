@@ -50,7 +50,6 @@
   .search-icon {
     position: absolute;
     left: 10px;
-    cursor: pointer;
   }
   .background {
     width: 100%;
@@ -61,8 +60,9 @@
   .posts {
     padding: 32px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3);
+    justify-items: center;
     gap: 10px;
   }
 }

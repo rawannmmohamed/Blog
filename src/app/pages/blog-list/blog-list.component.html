@@ -5,15 +5,28 @@
     <p>The latest industry news, interviews, technologies, and resources.</p>
     <div class="search">
       <img src="assets/icons/Icon.svg" alt="search icon" class="search-icon" />
-      <input type="search" name="" id="" placeholder="Search" />
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="Search"
+        [(ngModel)]="searchText"
+      />
     </div>
   </header>
   <main>
     <img src="assets/images/Background-pattern.png" class="background" />
+    @defer{ @if(!errorMessage) {
     <section class="posts">
-      @for(post of posts ; track post) {
-      <app-post-item [post]="post"></app-post-item>
-      }
+      @for(post of displayedPosts ; track post ) {
+      @if(post.title.toLowerCase().includes(searchText.toLowerCase()))
+      {<app-post-item [post]="post"></app-post-item>} }
     </section>
+    <button (click)="loadMorePosts()">Load More</button>
+    }@else{
+    <app-error-message></app-error-message>
+    }}@loading(minimum 1s){
+    <app-loading-indicator />
+    }
   </main>
 </div>
