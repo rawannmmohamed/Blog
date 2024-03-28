@@ -1,12 +1,11 @@
 :host {
-  .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
+  
   a {
     text-decoration: none;
     color: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .card {
     width: 384px;
@@ -59,7 +58,7 @@
     .card {
       width: 80%;
     }
-    .container {
+    a {
       font-size: smaller;
     }
   }
@@ -67,7 +66,7 @@
     .card {
       width: 90%;
     }
-    .container {
+    a {
       font-size: smaller;
     }
   }
