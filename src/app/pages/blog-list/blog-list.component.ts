@@ -20,12 +20,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class BlogListComponent implements OnInit {
   posts: Post[] = [];
-  errorMessage: boolean = false;
-  searchText: string = '';
+  errorMessage = false;
+  searchText = '';
   displayedPosts: Post[] = [];
-  initialDisplayCount: number = 3;
-  loadMoreCount: number = 3;
-
+  initialDisplayCount = 3;
+  loadMoreCount = 3;
   constructor(private postService: PostService) {}
 
   ngOnInit() {
@@ -48,5 +47,12 @@ export class BlogListComponent implements OnInit {
     const currentDisplayCount = this.displayedPosts.length;
     const newDisplayCount = currentDisplayCount + this.loadMoreCount;
     this.displayedPosts = this.posts.slice(0, newDisplayCount);
+  }
+
+  displayButton() {
+    return (
+      this.posts.length === 0 ||
+      this.displayedPosts.length === this.posts.length
+    );
   }
 }

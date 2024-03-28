@@ -1,4 +1,13 @@
 :host {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   .card {
     width: 384px;
     height: 580px;
@@ -6,7 +15,7 @@
     box-shadow: 0px 11px 20px 0px var(--gray);
     padding: 15px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
   }
   .article-image {
@@ -22,8 +31,8 @@
   }
   h2 {
     width: 80%;
-    margin : 0px ;
-    font-size: 24px;;
+    margin: 0px;
+    font-size: 24px;
   }
   .description {
     color: var(--dark-gray);
@@ -40,5 +49,26 @@
   .date {
     font-size: 14px;
     color: var(--dark-gray);
+  }
+  .details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 80%;
+    }
+    .container {
+      font-size: smaller;
+    }
+  }
+  @media screen and (max-width: 1280px) and (min-width: 770px) {
+    .card {
+      width: 90%;
+    }
+    .container {
+      font-size: smaller;
+    }
   }
 }

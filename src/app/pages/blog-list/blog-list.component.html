@@ -4,7 +4,11 @@
     <h1>Resources and insights</h1>
     <p>The latest industry news, interviews, technologies, and resources.</p>
     <div class="search">
-      <img src="assets/icons/Icon.svg" alt="search icon" class="search-icon" />
+      <img
+        src="assets/icons/search-Icon.svg"
+        alt="search icon"
+        class="search-icon"
+      />
       <input
         type="search"
         name=""
@@ -16,17 +20,28 @@
   </header>
   <main>
     <img src="assets/images/Background-pattern.png" class="background" />
-    @defer{ @if(!errorMessage) {
+    @defer(){ @if(!errorMessage) {
     <section class="posts">
       @for(post of displayedPosts ; track post ) {
       @if(post.title.toLowerCase().includes(searchText.toLowerCase()))
-      {<app-post-item [post]="post"></app-post-item>} }
+      {<app-post-item [post]="post"></app-post-item>
+
+      } } @empty{
+      <h1 class="empty">No posts available</h1>
+      }
     </section>
-    <button (click)="loadMorePosts()">Load More</button>
-    }@else{
+    <button
+    (click)="loadMorePosts()"
+    [hidden]="displayButton()"
+    class="load-more-btn"
+  >
+    <img src="assets/icons/arrow-down.svg" alt="down-arrow" /> Load more
+  </button>
+    } @else{
     <app-error-message></app-error-message>
-    }}@loading(minimum 1s){
+    } } @loading(minimum 1s){
     <app-loading-indicator />
     }
+    
   </main>
 </div>
