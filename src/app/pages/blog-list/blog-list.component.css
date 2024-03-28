@@ -17,10 +17,13 @@
     font-size: 14px;
     text-align: center;
     border-radius: 16px;
-    font-weight: 500;
+    font-weight: 700;
   }
   h1 {
     color: var(--dark-purple-text-color);
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
   }
   header p {
     color: var(--purple-text-color);
@@ -69,7 +72,13 @@
     gap: 25px;
     z-index: 1;
   }
-  .load-more-btn {
+  .retry {
+    box-shadow: 0px 10px 15px 0px var(--dark-gray);
+    z-index: 1;
+    background-color: var(--gray) !important;
+  }
+  .load-more-btn,
+  .retry {
     height: 48px;
     width: 150px;
     background-color: var(--secondary-background-color);
@@ -84,6 +93,7 @@
   .empty {
     position: absolute;
   }
+
   @media (max-width: 375px) {
     input {
       max-width: 250px;

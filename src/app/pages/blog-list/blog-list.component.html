@@ -24,24 +24,22 @@
     <section class="posts">
       @for(post of displayedPosts ; track post ) {
       @if(post.title.toLowerCase().includes(searchText.toLowerCase()))
-      {<app-post-item [post]="post"></app-post-item>
-
-      } } @empty{
+      {<app-post-item [post]="post"></app-post-item>} } @empty{
       <h1 class="empty">No posts available</h1>
       }
     </section>
     <button
-    (click)="loadMorePosts()"
-    [hidden]="displayButton()"
-    class="load-more-btn"
-  >
-    <img src="assets/icons/arrow-down.svg" alt="down-arrow" /> Load more
-  </button>
+      (click)="loadMorePosts()"
+      [hidden]="displayButton()"
+      class="load-more-btn"
+    >
+      <img src="assets/icons/arrow-down.svg" alt="down-arrow" /> Load more
+    </button>
     } @else{
     <app-error-message></app-error-message>
+    <button class="retry" (click)="loadPosts()">Retry</button>
     } } @loading(minimum 1s){
-    <app-loading-indicator />
+    <app-loading-indicator></app-loading-indicator>
     }
-    
   </main>
 </div>
