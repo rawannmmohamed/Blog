@@ -1,0 +1,30 @@
+:host {
+  .container {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 96px;
+    color: var(--dark-gray);
+    margin: 0;
+  }
+
+  p {
+    font-size: 24px;
+    color: var(--dark-gray);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--purple-text-color);
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

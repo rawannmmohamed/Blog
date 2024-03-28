@@ -4,7 +4,7 @@ export interface Post {
   title: string;
   description: string;
   published_at: string;
-  url:string;
+  url: string;
   user: {
     name: string;
     profile_image: string;
