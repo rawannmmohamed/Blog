@@ -2,26 +2,39 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
-## Development server
+## Live Demo
+https://educatly-task-tau.vercel.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Running the Project Locally
 
-## Code scaffolding
+To run this project locally, follow these steps:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+Before you begin, ensure you have the following installed on your local machine:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js: Download and install Node.js from [nodejs.org](https://nodejs.org/)
+- Angular CLI: Install Angular CLI globally by running `npm install -g @angular/cli` in your terminal
 
-## Running unit tests
+### Clone the Repository
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the GitHub repository to your local machine:
+git clone <repository_URL>
+Replace `<repository_URL>` with the URL of your GitHub repository.
 
-## Running end-to-end tests
+2. Navigate to the project directory:
+cd <project_directory>
+Replace `<project_directory>` with the name of your project directory.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Install Dependencies
 
-## Further help
+1. Install project dependencies using npm:
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+### Run the Project
+
+1. Start the Angular development server:
+ng serve
+
+2. Open a web browser and navigate to `http://localhost:4200/` to view the project.
