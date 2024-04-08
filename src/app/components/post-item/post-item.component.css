@@ -19,6 +19,7 @@
   }
   .article-image {
     width: 100%;
+    max-height: 123px;
   }
   .category {
     color: var(--purple-text-color);
