@@ -34,11 +34,10 @@
     width: 80%;
     margin: 0px;
     font-size: 24px;
+   
   }
   .description {
     color: var(--dark-gray);
-    height:100px;
-    overflow: hidden;
   }
   .person {
     display: flex;
