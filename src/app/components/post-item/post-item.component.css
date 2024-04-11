@@ -37,6 +37,8 @@
   }
   .description {
     color: var(--dark-gray);
+    width: 250px;
+    height:200px;
     overflow: hidden;
   }
   .person {
