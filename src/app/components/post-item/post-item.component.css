@@ -37,6 +37,7 @@
   }
   .description {
     color: var(--dark-gray);
+    overflow: hidden;
   }
   .person {
     display: flex;
