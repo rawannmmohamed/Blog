@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
 ## Live Demo
-https://educatly-task-tau.vercel.app/
+https://blog-dev-17.vercel.app/
 
 ## Running the Project Locally
 
